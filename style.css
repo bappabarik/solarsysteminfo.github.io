@@ -1,0 +1,149 @@
+/* carausal css */
+body {
+    background-color: black;
+    background: url("https://rare-gallery.com/thumbs/385447-4k-wallpaper.jpg");
+}
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 10% auto;
+    /* border: 1px solid red; */
+    height: 400px;
+    width: 100%;
+    right: 0%;
+    left: 3%;
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  .card-carousel .my-card {
+    height: 7.5rem;
+    width: 22rem;
+    border-radius: 50%;
+    position: relative;
+    margin: 0% auto;
+    z-index: 1;
+    -webkit-transform: scale(1) translateY(-2rem);
+    transform: scale(1) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 1s;
+    overflow: hidden;
+    box-shadow: 0 0 20px 20px #1c1c1c inset, 0 0 20px 2px rgb(54, 54, 54);
+
+  }
+  
+  .card-carousel .my-card:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: -20px -20px 50px 2px #000 inset;
+  border-radius: 50%;
+  }
+  
+  .card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(2.2) translateY(0) translateX(0);
+    transform: scale(2.2) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+    margin: 30px 100px;
+    background: transparent;
+  }
+  
+  .card-carousel .my-card.prev,
+  .card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(1) translateY(-1rem) translateX(0);
+    transform: scale(1) translateY(-1rem) translateX(0);
+    opacity: 5;
+    pointer-events: auto;
+    transition: 1s;
+    /* margin: 0% auto; */
+  }
+
+  @keyframes spin {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* padding: 20px; */
+  }
+
+.info-container{
+  height: 400px;
+  width: 95%;
+  background: rgb(255, 255, 255, 0.1);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-right: 1px solid rgb(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  margin: 5px auto;
+  position: absolute;
+  bottom: 0%;
+  left: 25px;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Patrick Hand', cursive;
+  padding: 5px 10px 25px 10px;
+  text-align: center;
+}
+
+ul{
+  text-align: left;
+}
+
+p{
+  opacity: 0.5;
+}
+ .item1 {
+  display: none;
+ } 
+
+ .item2 {
+  display: none;
+ }
+ .item3 {
+  display: none;
+ }
+
+ .item4 {
+  display: none;
+ }
+
+ .item5 {
+  display: none;
+ }
+
+ .item6 {
+  display: none;
+ }
+
+ .item7 {
+  display: none;
+ }
+
+ .item8 {
+  display: none;
+ }
+
+ .item9 {
+  display: none;
+ }
+  
+ .item10 {
+  display: none;
+ }
